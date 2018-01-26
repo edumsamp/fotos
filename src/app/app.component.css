@@ -1,12 +1,17 @@
-h1{
+h1 img{
     color: white;
-    text-align: center;
+    height: 40px;
+    width: 70%;
+    margin-top: -10px;
+    margin-left: 50px;
+    margin-right: auto;  
+    position: relative;
 }
 
-img{
+.menu img{
     width: 50px;
     position: absolute;
-    top: 0px;
+    top: 4px;
     right: -4px;
     cursor: pointer;
 }
@@ -14,7 +19,7 @@ img{
 section{
     width: 400px;
     height: 100vh;
-    background-color: #42a4f4;
+    background-color: #af0000;
     transform: translateX(-90%);
     transition: 1s;
     position: absolute;
@@ -24,9 +29,12 @@ section.ativa{
     transform: translateX(0);
 }
 
-form{
+.form-control{
     padding: 10px;
-    margin-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    ;
 }
 
 .cards{

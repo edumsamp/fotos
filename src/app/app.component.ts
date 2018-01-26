@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
   menuVisivel = true;
-  dados = {titulo: '', conteudo:''};
+  dados = {};
   lista = []
 
   constructor(){
@@ -28,11 +28,15 @@ export class AppComponent {
   }
 
   inserir(){
-    this.lista.push(this.dados);
-    this.dados = {titulo:'', conteudo:''};
-    console.log(this.lista);
-    let dadosString = JSON.stringify(this.lista);
-    localStorage.setItem('cards', dadosString);
+    // this.lista.push(this.dados);
+    // this.dados = {titulo:'', foto:'', tags:''};
+    // console.log(this.lista);
+    // let dadosString = JSON.stringify(this.lista);
+    // localStorage.setItem('cards', dadosString);
+    let textarea = '#salve#blz #comoqueta#boanoite';
+
+    
+
   }
 
   limpar(){

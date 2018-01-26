@@ -1,18 +1,24 @@
 <section [ngClass]="{ativa: menuVisivel}">
-  <h1>Photum</h1>
-  <img (click)="alternarMenu()" src="assets/menu.png" alt="">
-  
+  <h1><img src="assets/logo.png" alt=""></h1>
+  <div  class="menu">
+    <img (click)="alternarMenu()" src="assets/menu.png" alt="">
+  </div>
+
   <form>
     <div class="form-group">
       <input [(ngModel)]="dados.titulo" class="form-control" type="text" name="titulo" placeholder="Título">
     </div>
 
     <div class="form-group">
-      <input [(ngModel)]="dados.conteudo" class="form-control" type="text" name="conteudo" placeholder="Conteúdo">
+      <input [(ngModel)]="dados.foto" class="form-control" type="text" name="foto" placeholder="URL da foto">
     </div>  
 
-    <button (click)="inserir()" class="btn btn-block btn-success">Salvar</button>
-    <button (click)="limpar()" class="btn btn-block btn-danger">Limpar</button>
+    <div class="form-group">
+      <textarea [(ngModel)]="dados.tag" class="form-control" name="tag" placeholder="Coloque as suas tags aqui"></textarea>
+    </div>  
+
+    <button (click)="inserir()" class="btn">Salvar</button>
+    <button (click)="limpar()" class="btn">Limpar</button>
    </form>
 </section>
 
