@@ -18,10 +18,14 @@ div h3{
     font-weight: bold;
 }
 
-div p{
+div img{
     background-color: transparent;
     border: 1px black solid;
     border-radius: 10px;
+    height: 200px;
+    width: 230px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 div footer{

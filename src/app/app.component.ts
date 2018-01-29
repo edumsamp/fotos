@@ -32,10 +32,7 @@ export class AppComponent {
     this.dados = {titulo:'', foto:'', tags:''};
     console.log(this.lista);
     let dadosString = JSON.stringify(this.lista);
-    localStorage.setItem('cards', dadosString);
-    let textarea = '#salve#blz #comoqueta#boanoite';
-
-    
+    localStorage.setItem('cards', dadosString);    
 
   }
 

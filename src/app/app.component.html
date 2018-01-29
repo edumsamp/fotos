@@ -14,11 +14,12 @@
     </div>  
 
     <div class="form-group">
-      <textarea [(ngModel)]="dados.tag" class="form-control" name="tag" placeholder="Coloque as suas tags aqui"></textarea>
+      <textarea [(ngModel)]="dados.tag" class="form-control" name="tag" rows='4' placeholder="Coloque as suas tags aqui"></textarea>
     </div>  
 
-    <button (click)="inserir()" class="btn">Salvar</button>
-    <button (click)="limpar()" class="btn">Limpar</button>
+    <button (click)="inserir()" class="btn-salvar">Salvar</button>
+    <br>
+    <button (click)="limpar()" class="btn-limpar">Limpar</button>
    </form>
 </section>
 
